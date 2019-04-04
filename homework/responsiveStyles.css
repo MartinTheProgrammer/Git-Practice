@@ -1,0 +1,53 @@
+.col1, .col2 {
+    width: 100%;
+}
+
+.col3{
+    width: 100%;
+}
+
+@media screen and (orientation: portrait, min-width: 360px){
+    .main-content{
+        width: 100%;
+        float: none;
+    }
+    
+    .sidebar{
+        float: none;
+        width: 100%;
+    }
+}
+
+@media screen and (orientation: portrait, min-height: 650px){
+    .col1, .col2, .col3{
+        float: none;
+        width: 90%;
+    }
+    
+    .sidebox-1 {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape, min-width: 597px){
+    .main-content{
+        width: 100%;
+        float: 0%;
+    }
+    
+    .sidebar{
+        float: none;
+        width: 90%;
+    }
+}
+
+@media screen and (orientation: landscape, min-height: 360px){
+    .col1, .col2, .col3{
+        float: none;
+        width: 90%;
+    }
+    
+    .sidebox-1 {
+        display: none;
+    }
+}
